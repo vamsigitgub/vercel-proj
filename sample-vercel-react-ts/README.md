@@ -116,3 +116,19 @@ src/styles.css
 ```
 
 You can then add API calls, authentication, a database, forms, dashboards, or other application features as needed.
+
+## Vercel settings
+
+If Vercel shows `404: NOT_FOUND`, make sure the Vercel project is deploying the folder that contains `package.json`.
+
+Use these settings:
+
+- **Framework Preset:** Vite
+- **Root Directory:** the project root containing `package.json`
+- **Build Command:** `npm run build`
+- **Output Directory:** `dist`
+- **Install Command:** `npm install`
+
+After changing settings, redeploy.
+
+The included `vercel.json` enables deep linking for React Router paths such as `/about` and `/counter`.
